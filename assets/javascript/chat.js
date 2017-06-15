@@ -26,7 +26,8 @@ $("#post").on("click", function(){
     });
     var nameSaver = msgUser;
     console.log(nameSaver);
-    
+    $("#username").val('');
+    $("#text").val('');
   });
 
 var startListening = function() {
@@ -53,4 +54,4 @@ startListening();
 
   // NEWS API KEY 0b442f6c24fd47258f41f0daf201f118
   // https://newsapi.org/account
-  
+
