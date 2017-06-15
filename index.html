@@ -1,0 +1,190 @@
+	<!DOCTYPE html>
+	<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>NewsChat</title>
+		<!-- jQuery CDN -->
+		<script
+		src="https://code.jquery.com/jquery-3.2.1.min.js"
+		integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+		crossorigin="anonymous"></script>
+
+		<!--Google Fonts -->
+		<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
+		<!-- Reset CSS -->
+		<link rel="stylesheet" type="text/css" href="assets/css/reset.css">  
+		<!-- Bootsrap Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+		<!-- Optional theme -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+		<!-- Our CSS -->
+		<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	</head>
+	<body>
+		<!-- Navbar -->
+		<nav class="navbar navbar-default">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<a class="navbar-brand" href="#">NewsChat | <small>Live Chat About the Top Stories Around the World!</small></a>
+				</div>
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="#" class="list-group-item" data-category="al-jazeera-english">Al Jazeera</a></li>
+					<li><a href="#" class="list-group-item" data-category="associated-press">Associated Press</a></li>
+					<li><a href="#" class="list-group-item" data-category="bbc-news">BBC News</a></li>
+					<li><a href="#" class="list-group-item" data-category="breitbart-news">Breitbart</a></li>
+					<li><a href="#" class="list-group-item" data-category="cnn">CNN</a></li>
+					<li><a href="#" class="list-group-item" data-category="the-huffington-post">The Huffington Post</a></li>
+					<li><a href="#" class="list-group-item" data-category="usa-today">USA Today</a></li>
+				</ul>
+			</div>
+		</nav>
+
+		<div class="container" id="main-container">
+			<div class="row">
+				<div class="col-md-8">
+					<div class="jumbotron"  id="newsColumn">
+						<div id="placeHolder"><img id="placeHolderImage" src="assets/images/news.jpg" alt="HTML5 Icon" style="width:100%;height:100%;"></div>
+					</div>
+				</div>
+
+				<div class="col-md-4">
+
+					<div class="panel panel-default" id="textbox">
+						<div class="panel-heading">
+							<h3 class="panel-title">Live Chat</h3>
+						</div>
+
+						<div class="panel-body">
+							<div id="chatbox">
+								<div id="results"></div>
+								<div class="form-group">
+								</div>
+
+							</div>
+							<label for="usr">Name:</label>
+							<input placeholder="Enter Username" type="text" class="form-control" id="username">
+
+
+							<div class="form-group">
+								<label for="comment">Comment:</label>
+								<textarea class="form-control" rows="5" id="text"></textarea>
+							</div>
+
+							<div class="btn-group" role="group" aria-label="...">
+								<button id="post" type="button" class="btn btn-default">Submit</button>
+							</div>
+
+						</div>	
+					</div>
+					<div class="panel panel-default text-center" id="vote-box">
+						<div class="panel-heading">
+							<h3 class="panel-title">Real News or Fake News?!</h3>
+						</div>
+
+						<div class="panel-body">
+							<button type="button" class="btn btn-default">
+								<span class="glyphicon glyphicon-thumbs-up"></span>
+							</button>
+
+							<button type="button" class="btn btn-default">
+								<span class="glyphicon glyphicon-thumbs-down"></span>
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			
+
+			<div class="row">
+				<div class="col-md-4">
+					<table class="table-reponsive">
+						<table class="table table-condensed">
+							<thead>
+								<tr>
+									<th><strong>Source</strong></th>
+									<th><span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span></th>
+									<th><span class="glyphicon glyphicon-thumbs-down" aria-hidden="true"></span></th>
+								</tr>
+							</thead>
+
+							<tbody>
+								<tr>
+									<td>Al Jazeera</td>
+									<td id="upAlJazeera">0</td>
+									<td id="downAlJazeera">0</td>
+								</tr>
+								<tr>
+									<td>AP</td>
+									<td id="upAP">0</td>
+									<td id="downAP">0</td>
+								</tr>
+								<tr>
+									<td>BBC</td>
+									<td id="upBBC">0</td>
+									<td id="downBBC">0</td>
+								</tr>
+								<tr>
+									<td>Breitbart</td>
+									<td id="upBreitbart">0</td>
+									<td id="downBreitbart">0</td>
+								</tr>
+								<tr>
+									<td>CNN</td>
+									<td id="upCNN">0</td>
+									<td id="downCNN">0</td>
+								</tr>
+								<tr>
+									<td>Google News</td>
+									<td id="upGoogle">0</td>
+									<td id="downGoogle">0</td>
+								</tr>
+								<tr>
+									<td>Huff Post</td>
+									<td id="upHP">0</td>
+									<td id="downHP">0</td>
+								</tr>
+								<tr>
+									<td>NYT</td>
+									<td id="upNYT">0</td>
+									<td id="downNYT">0</td>
+								</tr>
+								<tr>
+									<td>USAToday</td>
+									<td id="upUSA">0</td>
+									<td id="downUSA">0</td>
+								</tr>
+							</tbody>
+						</table> 
+					</table> <!-- Main Table Closing Tag -->
+				</div>
+
+				<div class="col-md-4">
+				</div> <!--Empty Div for Spacing (Do Not Remove) -->
+
+				<div class="col-md-4">
+
+				</div>
+			</div>
+		</div> <!-- Main Container Closing Tag -->
+		
+
+		<!-- Footer -->
+		<footer class="container-fluid bg-4 text-center">
+			<p>Group Project #1 <small>By: Matt Gallagher, Gavin Luna, Lauren Whitehead, and Thomas Young<small></p>
+		</footer>
+
+		<script src="https://www.gstatic.com/firebasejs/4.1.2/firebase.js"></script>
+
+
+		<script type="text/javascript" src="assets/javascript/app.js"></script>
+		<script type="text/javascript" src="assets/javascript/chat.js"></script>
+		<script type="text/javascript" src="assets/javascript/vote.js"></script>
+	</body>
+	</html>
