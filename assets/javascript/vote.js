@@ -1,16 +1,17 @@
 
-$("#upvote").on("click", function(){
-    var CNNup = $("#upCNN").text();
-    CNNup ++;
-    console.log(CNNup);
-    $("#upCNN").empty();
-    $("#upCNN").append(CNNup);
+$("#buttonupvote").on("click", function(){
+    var voteUp = $("#upVote").text();
+    voteUp++;
+    console.log(voteUp);
+    $("#upVote").empty();
+    $("#upVote").append(voteUp);
+    
     
 })
-$("#downvote").on("click", function() {
-    var CNNdown = $("#downCNN").text();
-    CNNdown ++;
-    $("#downCNN").empty();
-    $("#downCNN").append(CNNdown);
+$("#buttondownvote").on("click", function() {
+    var voteDown = $("#downvote").text();
+    voteDown ++;
+    $("#downvote").empty();
+    $("#downvote").append(voteDown);
 })
 

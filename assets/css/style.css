@@ -48,3 +48,6 @@ img {
    width: 100%;
    overflow-y: auto;
 }
+tbody {
+    text-align:left;
+}
