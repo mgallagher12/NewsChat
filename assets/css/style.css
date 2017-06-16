@@ -1,19 +1,15 @@
 #main-container.container {
   padding: 2px;
-
-
 }
 
 body {
     font: "Montserrat", sans-serif;
     line-height: 1.8;
     color: black;
+    background-color: #ECECEA;
 }
 
-
 .navbar {
-    padding-top: 15px;
-    padding-bottom: 15px;
     border: 0;
     border-radius: 0;
     margin-bottom: 0;
@@ -30,7 +26,8 @@ img {
       height: 100%;
       padding: 2px;
       overflow: hidden;
-    
+      color: white;
+      background-color: #74AFAD;
 }
 
 .btn {
@@ -47,4 +44,39 @@ img {
    height: 100px;
    width: 100%;
    overflow-y: auto;
+}
+
+.panel > .panel-heading {
+    background-image: none;
+    background-color: #558C89;
+    color: white;
+    font-family: 'Oswald', sans-serif;
+}
+
+.nav-ctn-fluid {
+    background-color: #558C89;
+}
+
+big {
+    color: white;
+    font-size: 20px;
+    font-family: 'Oswald', sans-serif;
+}
+
+li:hover {
+    background-color: white;
+}
+
+a.list-group-item {
+    background-color: #74AFAD;
+    color: white;
+    font-family: 'Oswald', sans-serif;
+}
+
+tbody {
+    text-align: left;
+}
+
+.navbar-default .navbar-nav>li>a{
+    color: white;
 }
