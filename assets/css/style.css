@@ -81,8 +81,18 @@ tbody {
 .navbar-default .navbar-nav>li>a{
     color: white;
 }
-=======
+
 tbody {
     text-align:left;
 }
->>>>>>> 62a32df1ce4a0c32b9386cb12d99242445dfbfb6
+footer {
+    background-color: #558C89;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 25px;
+    width: 100%;
+    overflow:hidden;
+}
+
+

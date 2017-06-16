@@ -1,24 +1,20 @@
-<<<<<<< HEAD
-=======
 
->>>>>>> 62a32df1ce4a0c32b9386cb12d99242445dfbfb6
 $("#buttonupvote").on("click", function(){
+    $('#imggood').show();
     var voteUp = $("#upVote").text();
     voteUp++;
     console.log(voteUp);
     $("#upVote").empty();
     $("#upVote").append(voteUp);
-    
+    $('#imggood').fadeOut(3000);
+ 
     
 })
 $("#buttondownvote").on("click", function() {
+   $("#imgbad").show()
     var voteDown = $("#downvote").text();
     voteDown ++;
     $("#downvote").empty();
     $("#downvote").append(voteDown);
-<<<<<<< HEAD
+    $("#imgbad").fadeOut(3000);
 })
-=======
-})
-
->>>>>>> 62a32df1ce4a0c32b9386cb12d99242445dfbfb6
