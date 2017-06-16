@@ -3,6 +3,9 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>NewsChat</title>
+
+		<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+
 		<!-- jQuery CDN -->
 		<script
 		src="https://code.jquery.com/jquery-3.2.1.min.js"
@@ -29,9 +32,9 @@
 	<body>
 		<!-- Navbar -->
 		<nav class="navbar navbar-default">
-			<div class="container-fluid">
+			<div class="nav-ctn-fluid container-fluid">
 				<div class="navbar-header">
-					<a class="navbar-brand" href="#">NewsChat | <small>Live Chat About the Top Stories Around the World!</small></a>
+					<a class="navbar-brand" href="#"><big>NewsChat | <small>Live Chat About the Top Stories Around the World!</big></small></a>
 				</div>
 				<ul class="nav navbar-nav navbar-right">
 					<li><a href="#" class="list-group-item" data-category="al-jazeera-english">Al Jazeera</a></li>
@@ -88,91 +91,37 @@
 						</div>
 
 						<div class="panel-body">
-							<button id="upvote" type="button" class="btn btn-default">
+							<button id="buttonupvote" type="button" class="btn btn-default">
 								<span class="glyphicon glyphicon-thumbs-up"></span>
 							</button>
 
-							<button id="downvote" type="button" class="btn btn-default">
+							<button id="buttondownvote" type="button" class="btn btn-default">
 								<span class="glyphicon glyphicon-thumbs-down"></span>
 							</button>
 						</div>
-					</div>
-				</div>
-			</div>
 
-			
-
-			<div class="row">
-				<div class="col-md-4">
-					<table class="table-reponsive">
-						<table class="table table-condensed">
+						<table class="table-responsive">
+						<table class="table">
 							<thead>
 								<tr>
-									<th><strong>Source</strong></th>
-									<th><span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span></th>
-									<th><span class="glyphicon glyphicon-thumbs-down" aria-hidden="true"></span></th>
+									<th></th>
+									<th><span  class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span></th>
+									<th><span  class="glyphicon glyphicon-thumbs-down" aria-hidden="true"></span></th>
 								</tr>
 							</thead>
 
 							<tbody>
 								<tr>
-									<td>Al Jazeera</td>
-									<td id="upAlJazeera">8</td>
-									<td id="downAlJazeera">4</td>
-								</tr>
-								<tr>
-									<td>AP</td>
-									<td id="upAP">7</td>
-									<td id="downAP">2</td>
-								</tr>
-								<tr>
-									<td>BBC</td>
-									<td id="upBBC">10</td>
-									<td id="downBBC">8</td>
-								</tr>
-								<tr>
-									<td>Breitbart</td>
-									<td id="upBreitbart">8</td>
-									<td id="downBreitbart">3</td>
-								</tr>
-								<tr>
-									<td>CNN</td>
-									<td id="upCNN">5</td>
-									<td id="downCNN">6</td>
-								</tr>
-								<tr>
-									<td>Google News</td>
-									<td id="upGoogle">3</td>
-									<td id="downGoogle">2</td>
-								</tr>
-								<tr>
-									<td>Huff Post</td>
-									<td id="upHP">5</td>
-									<td id="downHP">2</td>
-								</tr>
-								<tr>
-									<td>NYT</td>
-									<td id="upNYT">8</td>
-									<td id="downNYT">4</td>
-								</tr>
-								<tr>
-									<td>USAToday</td>
-									<td id="upUSA">7</td>
-									<td id="downUSA">3</td>
+									<td>Total</td>
+									<td id="upVote">0</td>
+									<td id="downvote">0</td>
 								</tr>
 							</tbody>
 						</table> 
 					</table> <!-- Main Table Closing Tag -->
-				</div>
-
-				<div class="col-md-4">
-				</div> <!--Empty Div for Spacing (Do Not Remove) -->
-
-				<div class="col-md-4">
-
+					</div>
 				</div>
 			</div>
-		</div> <!-- Main Container Closing Tag -->
 		
 
 		<!-- Footer -->
@@ -187,4 +136,4 @@
 		<script type="text/javascript" src="assets/javascript/chat.js"></script>
 		<script type="text/javascript" src="assets/javascript/vote.js"></script>
 	</body>
-	</html>
+</html>

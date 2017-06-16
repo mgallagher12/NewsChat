@@ -53,5 +53,4 @@ startListening();
 })
 
   // NEWS API KEY 0b442f6c24fd47258f41f0daf201f118
-  // https://newsapi.org/account
-
+// https://newsapi.org/account
