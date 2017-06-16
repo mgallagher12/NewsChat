@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+
+>>>>>>> 62a32df1ce4a0c32b9386cb12d99242445dfbfb6
 $("#buttonupvote").on("click", function(){
     var voteUp = $("#upVote").text();
     voteUp++;
@@ -12,4 +16,9 @@ $("#buttondownvote").on("click", function() {
     voteDown ++;
     $("#downvote").empty();
     $("#downvote").append(voteDown);
+<<<<<<< HEAD
 })
+=======
+})
+
+>>>>>>> 62a32df1ce4a0c32b9386cb12d99242445dfbfb6

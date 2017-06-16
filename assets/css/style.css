@@ -45,6 +45,7 @@ img {
    width: 100%;
    overflow-y: auto;
 }
+<<<<<<< HEAD
 
 .panel > .panel-heading {
     background-image: none;
@@ -80,3 +81,8 @@ tbody {
 .navbar-default .navbar-nav>li>a{
     color: white;
 }
+=======
+tbody {
+    text-align:left;
+}
+>>>>>>> 62a32df1ce4a0c32b9386cb12d99242445dfbfb6
